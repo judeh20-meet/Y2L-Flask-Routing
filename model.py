@@ -8,7 +8,7 @@ class Product(Base):
 	__tablename__= 'Products'
 	id = Column(Integer, primary_key=True)
 	name = Column(String)
-	price = Column(Float)
+	price = Column(Integer)
 	picture_link = Column(String)
 	description = Column(String)
 

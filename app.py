@@ -13,7 +13,10 @@ def home():
 
 @app.route("/store")
 def store():
-	return render_template("store.html")
+	p1 = query_by_id(1)
+	p2 = query_by_id(2)
+	p3 = query_by_id(3)
+	return render_template("store.html", product1 = p1, product2 = p2,product3 = p3)
 
 @app.route("/about")
 def about():
@@ -21,8 +24,7 @@ def about():
 
 @app.route("/cart")
 def cart():
-	p = return_all_products()
-	return render_template("cart.html", Product = p)
+	return render_template("cart.html")
 
 
 if __name__ == '__main__':
