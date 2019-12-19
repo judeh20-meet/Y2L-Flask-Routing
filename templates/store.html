@@ -16,10 +16,9 @@
   <p><a href="{{url_for('cart')}}"><button >Add to Cart</button></a></p>
 </div>
 
-
 <div class="card">
   <h1> {{(product2.name)}}</h1>
-  <img src= "{{url_for('static', filename='RedDelicious.jpg') }}" style="width:60%">
+  <img src= "{{url_for('static', filename= (product2.picture_link)) }}" style="width:60%">
   <p class="price">{{(product2.price)}} $</p>
   <p> {{(product2.description)}}</p>
   <p><a href="{{url_for('cart')}}"><button >Add to Cart</button></a></p>
@@ -27,7 +26,7 @@
 
 <div class="card">
   <h1>{{(product3.name)}}</h1>
-  <img src= "{{url_for('static', filename='GoldenDelicious.jpg') }}" style="width:100%">
+  <img src= "{{url_for('static', filename= (product3.picture_link)) }}" style="width:100%">
   <p class="price">{{(product3.price)}} $</p>
   <p> {{(product3.description)}}</p>
   <p><a href="{{url_for('cart')}}"><button >Add to Cart</button></a></p>
@@ -62,6 +61,7 @@
 .card button:hover {
   opacity: 0.7;
 }
+
 </style>
 </body>
 </html>

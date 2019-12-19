@@ -54,6 +54,6 @@ def Add_To_Cart(productID):
 	session.commit()
 
 
-add_product("Granny Smith", 75, 'GrannySmith.jpg', "S O U R city!")
-add_product("Red Delicious", 50, 'RedDelicious.jpg', "i like to eat this apple becasue it is red")
-add_product("Yellow Delicious", 25, 'YellowDelicious.jpg', "i dont like this apple becasue it is yellow")
+# add_product("Granny Smith", 75, 'GrannySmith.jpg', "S O U R city!")
+# add_product("Red Delicious", 50, 'RedDelicious.jpg', "i like to eat this apple becasue it is red")
+# add_product("Golden Delicious", 25, 'GoldenDelicious.jpg', "i dont like this apple becasue it is yellow")
